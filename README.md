@@ -4,7 +4,7 @@ React 19 + TypeScript + Mantine + `@mantine/form` + Zod 4. All patient data is i
 
 - **Github Repo URL** https://github.com/Nikhilsoul/geriateric-test
 - **Live URL:** https://geriateric-test.vercel.app/
-- **Time spent:** about 1h 40m
+- **Time spent:** 1h 40m
 
 ## Run it
 
@@ -23,6 +23,6 @@ corepack yarn test    # typecheck, format, lint, vitest, build
 
 ## Not done / next
 
-- Cross-field errors only refresh when their own field is blurred or on submit. For example, changing the assessment date does not re-check date of birth until then. Next step: re-validate dependent fields on change.
-- A half-typed number like `8.` shows the "required" message, because it reaches Zod as a string. A friendlier message needs a schema change, which was out of scope.
-- No accessibility audit or browser-level tests beyond the two unit tests.
+- Cross-field errors only refresh on blur of the field that owns them (e.g. changing the assessment date does not re-check date of birth until you blur or submit). I would re-validate dependent fields on change.
+- A half-typed number like `8.` reaches Zod as a string and shows the "required" message; a friendlier message needs a schema change, which was out of scope.
+- No accessibility audit or browser tests beyond the two unit tests.
