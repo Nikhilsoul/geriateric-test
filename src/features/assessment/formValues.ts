@@ -1,10 +1,6 @@
 import type { Assessment } from './schema';
 
-// What the inputs hold while the nurse is typing. Derived from Assessment (no second interface):
-// only the fields whose *input* can be wider than the parsed output are widened.
-//  - Mantine's DateInput emits `string | null` (null = blank)
-//  - NumberInput emits `number | string` ('' = blank, or a half-typed value like '8.')
-//  - Select starts blank ('') and consent starts unchecked (false), which Assessment forbids
+
 export type AssessmentFormValues = Omit<
   Assessment,
   | 'dateOfBirth'

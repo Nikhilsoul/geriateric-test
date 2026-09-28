@@ -32,7 +32,7 @@ export function AssessmentForm({ onSave }: AssessmentFormProps) {
     initialValues: EMPTY_ASSESSMENT,
     validate: schemaResolver(assessmentSchema, { sync: true }),
     validateInputOnBlur: true,
-    // Runs only after validation has passed, so this is the parsed (trimmed, typed) output.
+    
     transformValues: (values) => assessmentSchema.parse(values),
   });
 
