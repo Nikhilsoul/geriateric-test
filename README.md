@@ -3,8 +3,8 @@
 One-page form a visiting nurse fills in during a home visit. React 19 + TypeScript + Mantine 9 + `@mantine/form` + Zod 4.
 All patient data in this repo is invented.
 
-- **Live URL:** _<add your deployed URL here>_
-- **Time spent:** _<add your honest number, e.g. "about 2h 15m">_
+- **Live URL:[https://geriateric-test.vercel.app/]
+- **Time spent: 1 hour 40 min
 
 ## Run it
 
