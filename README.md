@@ -9,9 +9,9 @@ All patient data in this repo is invented.
 ## Run it
 
 ```bash
-yarn install
-yarn dev        # http://localhost:5173
-yarn test       # typecheck + format check + lint + vitest + build
+corepack yarn install
+corepack yarn dev        # http://localhost:5173
+corepack yarn test       # typecheck + format check + lint + vitest + build
 ```
 
 ## How it is wired
